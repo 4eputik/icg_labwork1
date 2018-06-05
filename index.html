@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>  
     <meta charset="utf-8" />
@@ -8,6 +8,218 @@
     <script src="https://www.x3dom.org/download/x3dom.js"></script>
   </head>
   <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
+   <Scene>
+		<NavigationInfo headlight="false"
+		                visibilityLimit="0.0"
+		                type='"EXAMINE", "ANY"'
+		                avatarSize="0.25, 1.75, 0.75"
+		                />
+		<Background DEF="WO_World"
+		            groundColor="0.065 0.638 1.000"
+		            skyColor="0.065 0.638 1.000"
+		            />
+		<Transform DEF="Icosphere_TRANSFORM"
+		           translation="0.494570 2.455398 1.127423"
+		           scale="1.000000 1.000000 1.484645"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="Icosphere_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 -0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="1.000000 0.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_Icosphere">
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_Material_001"
+							          diffuseColor="0.017 0.800 0.000"
+							          specularColor="0.401 0.401 0.401"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.333"
+							          shininess="0.098"
+							          transparency="0.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="true"
+						                coordIndex="0 13 12 -1 1 13 15 -1 0 12 17 "
+						                >
+							<Coordinate DEF="coords_ME_Icosphere"
+							            point="0.000000 0.000000 -1.000000 0.723607  "
+							            />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+		<Transform DEF="Lamp_TRANSFORM"
+		           translation="-4.076245 5.903862 1.005454"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="-0.498084 -0.762016 -0.413815 1.513875"
+		           >
+			<PointLight DEF="LA_Lamp"
+			            ambientIntensity="0.0000"
+			            color="1.0000 1.0000 1.0000"
+			            intensity="0.5714"
+			            radius="30.0000" 
+			            location="-0.0000 -0.0000 0.0000"
+			            />
+		</Transform>
+		<Transform DEF="Cone_TRANSFORM"
+		           translation="0.000928 0.068295 0.423362"
+		           scale="0.429472 0.429472 0.429472"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="Cone_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="1.000000 0.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_Cone">
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_Material_004"
+							          diffuseColor="1.000 0.917 0.832"
+							          specularColor="0.401 0.401 0.401"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.333"
+							          shininess="0.098"
+							          transparency="0.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="true"
+						                coordIndex="0 1 3 2 -1 2 3 5 4 -1 4 5 7 6 -1 6 7 9 8 -1 8 9 11 "
+						                >
+							<Coordinate DEF="coords_ME_Cone"
+							            point="0.000000 1.000000 -0.146154 0.000000 0.170000 1.000000 0.195090 0.980785 -0.146154 0.033165 0.166733 1.000000 0.382683  "
+							            />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+		<Transform DEF="Cylinder_TRANSFORM"
+		           translation="0.441410 0.350692 1.102563"
+		           scale="0.211950 0.211950 1.237722"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="Cylinder_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="1.000000 0.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_Cylinder">
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_Material_007"
+							          diffuseColor="0.800 0.175 0.016"
+							          specularColor="0.015 0.038 0.003"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.333"
+							          shininess="0.098"
+							          transparency="0.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="true"
+						                coordIndex="0 1 3 2 -1 2 3 5 4 -1 4 5 7 6 -1 6 7 9 8 -1 8 9 11 10 -1 10 11 13 12 -1 12 13 15 14 "
+						                >
+							<Coordinate DEF="coords_ME_Cylinder"
+							            point="0.000000 1.000000 -0.283325 0.000000 1.000000 1.000000 0.195090 0.980785 -0.283325 0.195090 0.980785 1.000000 0.382683  "
+							            />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+		<Transform DEF="Plane_TRANSFORM"
+		           translation="0.000000 0.000000 0.000000"
+		           scale="2.014690 2.014690 2.014690"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="Plane_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="1.000000 0.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_Plane">
+					<Shape>
+						<Appearance>
+							<Material USE="MA_Material_001" />
+						</Appearance>
+						<IndexedFaceSet solid="true"
+						                coordIndex="0 1 3 2 -1 "
+						                >
+							<Coordinate DEF="coords_ME_Plane"
+							            point="-1.000000 -1.000000 0.000000 1.000000 -1.000000 0.000000 -1.000000 1.000000 0.000000 1.000000 1.000000 0.000000 "
+							            />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+		<Transform DEF="Sphere_TRANSFORM"
+		           translation="0.005279 0.510860 0.422158"
+		           scale="0.402012 0.402012 0.402012"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="Sphere_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 -0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="1.000000 0.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_Sphere_003">
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_Material_003"
+							          diffuseColor="0.723 0.012 0.024"
+							          specularColor="0.401 0.401 0.401"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.333"
+							          shininess="0.098"
+							          transparency="0.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="true"
+						                coordIndex="254 253 4 5 -1 255 254 5 6 -1 256 255 6 7 -1 0 1 250 249  "
+						                >
+							<Coordinate DEF="coords_ME_Sphere_003"
+							            point="0.038060 0.191342 0.980785 0.074658 0.375330  "
+							            />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_Material_005"
+							          diffuseColor="0.897 1.000 0.852"
+							          specularColor="0.401 0.401 0.401"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.333"
+							          shininess="0.098"
+							          transparency="0.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="true"
+						                coordIndex="253 252 3 4 -1 249 136 0 -1 6 5 13 14 -1 0 136 8 -1 8 136 16  "
+						                >
+							<Coordinate USE="coords_ME_Sphere_003" />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+		<Transform DEF="Sun_TRANSFORM"
+		           translation="-4.079393 2.860862 1.014519"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<DirectionalLight DEF="LA_Sun"
+			                  ambientIntensity="0.0000"
+			                  color="1.0000 1.0000 1.0000"
+			                  intensity="0.5714"
+			                  direction="0.0000 0.0000 -1.0000"
+			                  />
+		</Transform>
+	</Scene>
+	</X3D>
+
   </body> 
 </html>
